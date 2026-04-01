@@ -36,7 +36,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              R V M Construction is a premier industrial construction company 
+              R V M Construction is a premier industrial construction company
               dedicated to delivering excellence in every project we undertake.
             </p>
             <div className="flex gap-4">
@@ -94,22 +94,24 @@ const Footer = () => {
             <h4 className="text-lg font-bold text-white mb-6">Contact Info</h4>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <FaMapMarkerAlt className="text-construction-yellow mt-1" />
-                <p className="text-gray-400">
-                  R V M Construction<br />
-                  Gujarat, India
-                </p>
+                <FaMapMarkerAlt className="text-construction-yellow mt-1 flex-shrink-0" />
+                <div className="text-gray-400">
+                  <p className="font-semibold text-white mb-1">Communication Office</p>
+                  <p className="mb-3">B/266, Royal Plaza, Nr. Shuvidha Row House,<br />Simada Road, Simada Gam,<br />Surat, Gujarat - 395006</p>
+                  <p className="font-semibold text-white mb-1">Registered Office</p>
+                  <p>S/14, Municipal Shopping Center,<br />Mavdi Main Road,<br />Rajkot, Gujarat - 360004</p>
+                </div>
               </div>
               <div className="flex items-center gap-3">
                 <FaPhoneAlt className="text-construction-yellow" />
                 <p className="text-gray-400">
-                  +91 75750 93303
+                  +91 7575093303
                 </p>
               </div>
               <div className="flex items-center gap-3">
                 <FaEnvelope className="text-construction-yellow" />
                 <p className="text-gray-400">
-                  info@rvmovaliya.com
+                  rvmovaliyaconstructionco@gmail.com
                 </p>
               </div>
               <div className="flex items-start gap-3">

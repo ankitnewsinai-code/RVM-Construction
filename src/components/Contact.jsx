@@ -66,10 +66,13 @@ const Contact = () => {
                   <FaMapMarkerAlt className="text-white text-xl" />
                 </div>
                 <div>
-                  <h4 className="text-white font-semibold mb-1">Address</h4>
+                  <h4 className="text-white font-semibold mb-2">Communication Office</h4>
+                  <p className="text-gray-300 mb-4">
+                    B/266, Royal Plaza, Nr. Shuvidha Row House,<br />Simada Road, Simada Gam,<br />Surat, Gujarat - 395006
+                  </p>
+                  <h4 className="text-white font-semibold mb-2">Registered Office</h4>
                   <p className="text-gray-300">
-                    R V M Construction<br />
-                    Gujarat, India
+                    S/14, Municipal Shopping Center,<br />Mavdi Main Road,<br />Rajkot, Gujarat - 360004
                   </p>
                 </div>
               </div>
@@ -81,7 +84,7 @@ const Contact = () => {
                 <div>
                   <h4 className="text-white font-semibold mb-1">Phone</h4>
                   <p className="text-gray-300">
-                    +91 75750 93303
+                    +91 7575093303
                   </p>
                 </div>
               </div>
@@ -93,8 +96,7 @@ const Contact = () => {
                 <div>
                   <h4 className="text-white font-semibold mb-1">Email</h4>
                   <p className="text-gray-300">
-                    info@rvmovaliya.com<br />
-                    contact@rvmovaliya.com
+                    rvmovaliyaconstructionco@gmail.com
                   </p>
                 </div>
               </div>
@@ -163,7 +165,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-construction-yellow focus:border-transparent outline-none transition-colors"
-                    placeholder="+91 75750 93303"
+                    placeholder="+91 7575093303 "
                   />
                 </div>
                 <div>

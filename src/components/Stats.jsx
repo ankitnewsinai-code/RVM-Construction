@@ -22,7 +22,7 @@ const Stats = () => {
   const stats = [
     {
       icon: <FaCalendarAlt className="text-4xl" />,
-      number: 2020,
+      number: 2012,
       suffix: "",
       label: "Year Established",
     },

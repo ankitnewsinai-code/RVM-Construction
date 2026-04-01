@@ -1,74 +1,93 @@
 import React from 'react'
 import { 
-  FaWarehouse, 
-  FaFlask, 
-  FaCube,
-  FaRoad,
-  FaPaintRoller,
-  FaBuilding,
-  FaHandshake,
-  FaHospital
- } from 'react-icons/fa'
-import { GiFactory, GiCrane } from 'react-icons/gi'
+  FaGasPump, FaSolarPanel, FaNetworkWired, FaBroadcastTower, 
+  FaSatelliteDish, FaBolt, FaPlug, FaLightbulb, FaBroom, 
+  FaWater, FaBorderAll, FaBuilding, FaRoad, FaArchway, FaTractor
+} from 'react-icons/fa'
 import { motion } from 'framer-motion'
 
 const Services = () => {
   const services = [
     {
-      icon: <GiCrane className="text-4xl" />,
-      title: "Industrial Steel Shed Construction",
-      description: "Durable and cost-effective steel shed solutions for industrial applications with superior structural integrity."
+      icon: <FaGasPump className="text-4xl" />,
+      title: "City Gas Distribution",
+      description: "Steel Pipeline, PE Pipeline & PNG Domestic, Commercial & Industrial Connection, O&M, DMA, CNG Station, MRS, DRS Work."
     },
     {
-      icon: <GiFactory className="text-4xl" />,
-      title: "Pre Engineered Buildings (PEB)",
-      description: "Custom-designed PEB structures with fast installation and excellent quality standards."
+      icon: <FaSolarPanel className="text-4xl" />,
+      title: "Solar Renewable Energy",
+      description: "Installation, Testing & Commissioning of Grid connected Rooftop Solar & Ground Mount Photovoltaic Systems."
     },
     {
-      icon: <FaFlask className="text-4xl" />,
-      title: "Chemical Plant Construction",
-      description: "Specialized construction for chemical processing facilities with safety compliance and precision."
+      icon: <FaNetworkWired className="text-4xl" />,
+      title: "OFC & JF Cable Works",
+      description: "Laying & HDD, Installation, Commissioning Cable (OFC & JF)."
     },
     {
-      icon: <FaWarehouse className="text-4xl" />,
-      title: "Warehouse Construction",
-      description: "Large-scale warehouse facilities with optimal space utilization and durability."
+      icon: <FaBroadcastTower className="text-4xl" />,
+      title: "Tower Structure Works",
+      description: "Tower Structure of ODSC (GBT & RTP) Lattice ESC Work Civil/ Erection/ Electrical and Tower Dismantling Work."
     },
     {
-      icon: <FaCube className="text-4xl" />,
-      title: "Prefabricated Structures",
-      description: "Modern prefabricated building solutions for quick and efficient construction."
+      icon: <FaSatelliteDish className="text-4xl" />,
+      title: "5G ODSC Upgradation",
+      description: "5G ODSC (GBT/GBM/NBT) Upgradation Work Civil/ Erection/ Electrical."
     },
     {
-      icon: <FaCube className="text-4xl" />,
-      title: "Structural Glass Glazing",
-      description: "Elegant glass facade and structural glazing solutions for modern buildings."
+      icon: <FaBolt className="text-4xl" />,
+      title: "Power Cable Works",
+      description: "Laying, Testing, Commissioning, of Power cable."
     },
     {
-      icon: <FaRoad className="text-4xl" />,
-      title: "RCC Road Construction",
-      description: "High-quality reinforced cement concrete road construction for industrial zones."
+      icon: <FaPlug className="text-4xl" />,
+      title: "HT/LT Cable Work",
+      description: "Laying, Testing, Commissioning, of HT/LT Cable and Push through/ HDD method."
     },
     {
-      icon: <FaPaintRoller className="text-4xl" />,
-      title: "Interior Fit-Out",
-      description: "Professional interior design and fit-out services for commercial and industrial spaces."
+      icon: <FaLightbulb className="text-4xl" />,
+      title: "Street & Flood Lights",
+      description: "Installation, Commissioning, Testing of Street Light Pole & Flood Lights & Electric Pole."
+    },
+    {
+      icon: <FaBolt className="text-4xl" />,
+      title: "Overhead Line & O&M",
+      description: "Erection of HT/LT Line & TC Overhead line and O&M Work."
+    },
+    {
+      icon: <FaBroom className="text-4xl" />,
+      title: "Commercial Cleaning Services",
+      description: "Housekeeping, Office, Warehouse, Furniture, Building, Renovation, and Construction Area Cleaning."
+    },
+    {
+      icon: <FaWater className="text-4xl" />,
+      title: "U/G Pipeline & Drainage",
+      description: "Laying of U/G Pipe Line work, Drainage work."
+    },
+    {
+      icon: <FaBorderAll className="text-4xl" />,
+      title: "Protection Wall & Precast",
+      description: "Compound Wall, RCC Protection Wall, Precast Wall Work."
     },
     {
       icon: <FaBuilding className="text-4xl" />,
-      title: "Exposed Brick Construction",
-      description: "Aesthetic exposed brick work for industrial and commercial architectural designs."
+      title: "Construction & Repair",
+      description: "Construction of Building & Repairing and Maintenance work."
     },
     {
-      icon: <FaHandshake className="text-4xl" />,
-      title: "Turnkey Construction Projects",
-      description: "End-to-end construction solutions from planning to execution and handover."
+      icon: <FaRoad className="text-4xl" />,
+      title: "Bituminous & R.C.C Road Work",
+      description: "Bituminous & R.C.C Road work."
     },
     {
-      icon: <FaHospital className="text-4xl" />,
-      title: "Hospital Construction",
-      description: "Specialized healthcare infrastructure construction with modern facilities."
+      icon: <FaArchway className="text-4xl" />,
+      title: "Box Culvert & Minor Bridge",
+      description: "Structure of Box Culvert & Minor Bridge."
     },
+    {
+      icon: <FaTractor className="text-4xl" />,
+      title: "Fabrication Work",
+      description: "Structure of Fabrication work."
+    }
   ]
 
   const containerVariants = {

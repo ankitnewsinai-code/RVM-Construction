@@ -14,12 +14,12 @@ const Footer = () => {
   ]
 
   const services = [
-    'Industrial Steel Shed Construction',
-    'Pre Engineered Buildings (PEB)',
-    'Chemical Plant Construction',
-    'Warehouse Construction',
-    'Prefabricated Structures',
-    'Turnkey Construction Projects',
+    'City Gas Distribution',
+    'Solar Renewable Energy',
+    'Tower Structure Works',
+    'Commercial Cleaning Services',
+    'Bituminous & R.C.C Road Work',
+    'Building Construction & Repair',
   ]
 
   return (
@@ -111,7 +111,8 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <FaEnvelope className="text-construction-yellow" />
                 <p className="text-gray-400">
-                  rvmovaliyaconstructionco@gmail.com
+                  jenilmer47@gmail.com
+
                 </p>
               </div>
               <div className="flex items-start gap-3">

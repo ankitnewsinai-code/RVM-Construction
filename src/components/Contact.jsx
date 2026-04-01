@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock } from 'react-icons/fa'
 
 const Contact = () => {
+  const [showModal, setShowModal] = useState(false)
   const [formData, setFormData] = useState({
     fullName: '',
     companyName: '',
@@ -12,17 +13,23 @@ const Contact = () => {
   })
 
   const services = [
-    "Industrial Steel Shed Construction",
-    "Pre Engineered Buildings (PEB)",
-    "Chemical Plant Construction",
-    "Warehouse Construction",
-    "Prefabricated Structures",
-    "Structural Glass Glazing",
-    "RCC Road Construction",
-    "Interior Fit-Out",
-    "Exposed Brick Construction",
-    "Turnkey Construction Projects",
-    "Hospital Construction",
+    "City Gas Distribution",
+    "Solar Renewable Energy",
+    "OFC & JF Cable Works",
+    "Tower Structure Works",
+    "5G ODSC Upgradation",
+    "Power Cable Works",
+    "HT/LT Cable Work",
+    "Street & Flood Lights",
+    "Overhead Line & O&M",
+    "Housekeeping & Cleaning Services",
+    "Commercial Cleaning Services",
+    "U/G Pipeline & Drainage",
+    "Protection Wall & Precast",
+    "Construction & Repair",
+    "Bituminous & R.C.C Road Work",
+    "Box Culvert & Minor Bridge",
+    "Fabrication Work",
     "Other"
   ]
 
@@ -34,7 +41,15 @@ const Contact = () => {
     e.preventDefault()
     // Handle form submission
     console.log(formData)
-    alert('Thank you for your inquiry! We will get back to you soon.')
+    setShowModal(true)
+    setFormData({
+      fullName: '',
+      companyName: '',
+      phone: '',
+      email: '',
+      service: '',
+      message: ''
+    })
   }
 
   return (
@@ -96,7 +111,7 @@ const Contact = () => {
                 <div>
                   <h4 className="text-white font-semibold mb-1">Email</h4>
                   <p className="text-gray-300">
-                    rvmovaliyaconstructionco@gmail.com
+                    thummarankit06@gmail.com
                   </p>
                 </div>
               </div>
@@ -228,6 +243,31 @@ const Contact = () => {
           </div>
         </div>
       </div>
+
+      {/* Success Modal */}
+      {showModal && (
+        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 backdrop-blur-sm">
+          <div className="bg-white rounded-xl shadow-2xl p-8 max-w-sm w-full">
+            <div className="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-green-100 mb-6">
+              <svg className="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <div className="text-center">
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Thank You!</h3>
+              <p className="text-gray-600 mb-6">
+                Your inquiry has been successfully sent. We will get back to you soon.
+              </p>
+              <button
+                onClick={() => setShowModal(false)}
+                className="w-full bg-construction-yellow text-white rounded-lg px-4 py-3 font-semibold hover:bg-yellow-500 transition-colors duration-200"
+              >
+                Okay
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   )
 }
